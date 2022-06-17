@@ -2,8 +2,8 @@ const Clown = () => {
   return (
     <svg
       version="1.0"
-      height="900px"
-      width="900px"
+      height="100%"
+      width="100%"
       viewBox="0 0 1200.000000 1350.000000"
       preserveAspectRatio="xMidYMid meet"
     >

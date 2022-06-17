@@ -1,13 +1,16 @@
 import Clown from "./components/Clown";
+import "./app.css";
 function App() {
   return (
     <div className="wrapper">
-      <section className="container">
-        <h1 className="title">Coloring Book </h1>
-        <div className="img-container">
+      <div className="container">
+        <article className="title-div">
+          <h1 className="title">Coloring Book </h1>
+        </article>
+        <section className="img-container">
           <Clown />
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 }

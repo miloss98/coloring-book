@@ -1,8 +1,26 @@
 .wrapper {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  width: 100%;
+  background-color: lightgrey;
 }
 .container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-container {
+  width: 55%;
+  height: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: white;
+}
+.title-div {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 1rem 0rem 2rem 0rem;
 }
 .title {
   text-align: center;
