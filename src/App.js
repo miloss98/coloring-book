@@ -1,7 +1,13 @@
+import Clown from "./components/Clown";
 function App() {
   return (
-    <div>
-      <h1> test </h1>
+    <div className="wrapper">
+      <section className="container">
+        <h1 className="title">Coloring Book </h1>
+        <div className="img-container">
+          <Clown />
+        </div>
+      </section>
     </div>
   );
 }
