@@ -1,4 +1,5 @@
-import Clown from "./components/Clown";
+//import Clown from "./components/Clown";
+import Flower from "./components/Flower";
 import "./app.css";
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
           <h1 className="title">Coloring Book </h1>
         </article>
         <section className="img-container">
-          <Clown />
+          <Flower />
         </section>
       </div>
     </div>
