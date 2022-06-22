@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ColorPallete from "./components/ColorPallete";
 import Flower from "./components/Flower";
+//import Rocket from "./components/Rocket";
 import "./app.css";
 function App() {
   //colors

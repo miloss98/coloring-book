@@ -9,10 +9,7 @@ const Flower = (props) => {
       viewBox="0 0 800 800"
     >
       <g id="layer2" transform="translate(114 66)" display="inline">
-        <g
-          id="svg_27"
-          transform="matrix(0.849029 0 0 0.849029 65.2874 25.9633)"
-        >
+        <g id="svg_27" transform="matrix(1 0 0 0.8  65.2874 55.9633)">
           <path
             onClick={() => fill(0)}
             fill={colors[0]}
