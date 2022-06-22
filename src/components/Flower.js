@@ -1,17 +1,13 @@
-const Dog = (props) => {
-  const { fill, colors } = props;
-  const width = Math.min(window.innerWidth);
-  const height = Math.min(window.innerHeight);
-  console.log(width, height);
+const Flower = (props) => {
+  const { fill, colors, dimensions } = props;
+
   return (
     <svg
-      width={width}
-      height={height}
+      height={dimensions.height}
+      width={dimensions.width}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 800 800"
     >
-      <title> Flower </title>
-
       <g id="layer2" transform="translate(114 66)" display="inline">
         <g
           id="svg_27"
@@ -243,4 +239,4 @@ const Dog = (props) => {
   );
 };
 
-export default Dog;
+export default Flower;

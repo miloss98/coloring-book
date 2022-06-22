@@ -1,15 +1,14 @@
 import "../app.css";
 const ColorPallete = (props) => {
-  const { currentColor, changeColor } = props;
+  const { currentColor, changeColor, reset } = props;
 
   const colors = [
     "#FF0000",
     "#ffa500",
+    "#FFFF00",
     "#00FF00",
     "#00FFFF",
     "#0000FF",
-    "#FFD700",
-    "#FFFF00",
     "#FF00FF",
     "#800080",
     "#FFFFFF",
@@ -20,10 +19,10 @@ const ColorPallete = (props) => {
 
   return (
     <div className="color-palette">
-      {colors.map((color) => {
+      {colors.map((color, id) => {
         const activeClass = currentColor === color ? "single-color-active" : "";
         return (
-          <div onClick={() => changeColor(color)}>
+          <div key={id} onClick={() => changeColor(color)}>
             <div
               className={`single-color ${activeClass}`}
               style={{ backgroundColor: color }}
@@ -31,6 +30,7 @@ const ColorPallete = (props) => {
           </div>
         );
       })}
+      <button onClick={reset}> Reset </button>
     </div>
   );
 };
