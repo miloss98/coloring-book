@@ -1,3 +1,4 @@
+import "./../app.css";
 const Flower = (props) => {
   const { fill, colors, dimensions } = props;
 

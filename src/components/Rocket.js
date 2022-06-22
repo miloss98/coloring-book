@@ -1,3 +1,4 @@
+import "./../app.css";
 const Rocket = (props) => {
   const { fill, colors, dimensions } = props;
   return (
