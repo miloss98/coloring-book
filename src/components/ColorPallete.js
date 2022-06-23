@@ -30,7 +30,9 @@ const ColorPallete = (props) => {
           </div>
         );
       })}
-      <button onClick={reset}> Reset </button>
+      <button className="reset-btn" onClick={reset}>
+        Reset
+      </button>
     </div>
   );
 };
