@@ -104,9 +104,10 @@ path:hover {
     margin-left: 0.5rem;
   }
 }
+
 @media only screen and (max-width: 992px) {
   .svg-container {
-    width: 80%;
+    width: 90%;
   }
   .color-palette {
     width: 120%;
