@@ -7,10 +7,10 @@ const Flower = (props) => {
       height={dimensions.height}
       width={dimensions.width}
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 800 800"
+      viewBox="0 0 900 900"
     >
-      <g id="layer2" transform="translate(114 66)" display="inline">
-        <g id="svg_27" transform="matrix(1 0 0 0.8  65.2874 55.9633)">
+      <g id="layer2" transform="translate(140 106)" display="inline">
+        <g id="svg_27" transform="matrix(1 0 0 0.8 50 80)">
           <path
             onClick={() => fill(0)}
             fill={colors[0]}
