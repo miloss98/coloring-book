@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
-import ColorPallete from "./components/ColorPallete";
-import Flower from "./components/Flower";
-//import Rocket from "./components/Rocket";
-import Saturn from "./components/Saturn";
+import { ColorPallete, Flower, Rocket, Saturn } from "./components/index";
 import "./app.css";
 function App() {
   //colors
@@ -57,7 +54,7 @@ function App() {
           <h1 className="title">Coloring Book </h1>
         </section>
         <section className="svg-container">
-          <Flower colors={colors} fill={fillColors} dimensions={dimensions} />
+          <Saturn colors={colors} fill={fillColors} dimensions={dimensions} />
         </section>
         <section className="pallete-container">
           <ColorPallete
