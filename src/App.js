@@ -24,21 +24,21 @@ function App() {
   const [heights] = useState({
     headerHeight: 80,
     palleteHeight: 140,
-    border: 2,
+    borders: 10,
   });
   const heightsSum =
-    heights.headerHeight + heights.palleteHeight + heights.border;
-
+    heights.headerHeight + heights.palleteHeight + heights.borders;
+  const widths = 30;
   //scaling
   const [dimensions, setDimensions] = useState({
     height: Math.min(window.innerHeight) - heightsSum,
-    width: Math.min(window.innerWidth),
+    width: Math.min(window.innerWidth) - widths,
   });
   useEffect(() => {
     function handleResize() {
       setDimensions({
         height: Math.min(window.innerHeight) - heightsSum,
-        width: Math.min(window.innerWidth),
+        width: Math.min(window.innerWidth) - widths,
       });
     }
 

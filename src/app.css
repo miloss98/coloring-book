@@ -1,5 +1,5 @@
 .wrapper {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: lightgrey;
   display: flex;
@@ -32,7 +32,7 @@
 /* Svg */
 .svg-container {
   width: 50%;
-  border: 1px solid grey;
+  border: 3px solid black;
   border-radius: 5px;
   background-color: white;
   display: flex;
@@ -44,7 +44,7 @@
 /* Pallete */
 .pallete-container {
   height: 140px;
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,8 +81,9 @@ path:hover {
 .reset-btn {
   height: 35px;
   width: 70px;
-  margin-left: 3rem;
+  margin-left: 2rem;
   border-radius: 5px;
+  padding: 0.3rem;
   border: none;
   color: white;
   background-color: royalblue;
@@ -92,12 +93,15 @@ path:hover {
   filter: brightness(80%);
 }
 /* media queries */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
   .svg-container {
     width: 70%;
   }
   .color-palette {
     width: 70%;
+  }
+  .reset-btn {
+    margin-left: 0.5rem;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -105,11 +109,9 @@ path:hover {
     width: 80%;
   }
   .color-palette {
-    width: 80%;
-    margin-top: 1.5rem;
-    width: 80%;
+    width: 120%;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    margin: 1.5rem 1rem;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -118,17 +120,66 @@ path:hover {
     margin-bottom: 1rem;
   }
   .title-container {
-    width: 80%;
+    width: 90%;
     margin-top: 0.5rem;
     margin-bottom: 0;
   }
   .color-palette {
-    margin-top: 1.5rem;
-    width: 80%;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
+    width: 150%;
+
+    margin-top: 1rem;
+    border: 1px solid red;
   }
   .reset-btn {
     margin-left: 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .svg-container {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  .title-container {
+    width: 90%;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  .color-palette {
+    width: 180%;
+
+    margin-top: 1rem;
+    border: 1px solid red;
+  }
+  .reset-btn {
+    margin-left: 1rem;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .svg-container {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  .title-container {
+    width: 90%;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  .color-palette {
+    width: 120%;
+    margin-top: 0.5em;
+    border: 1px solid red;
+  }
+  .single-color {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  .reset-btn {
+    margin-left: 1rem;
+    height: 20px;
+    width: 50px;
+    font-size: 0.8rem;
+    padding: 0;
   }
 }
