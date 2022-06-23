@@ -75,7 +75,7 @@
 }
 /* svgs */
 path:hover {
-  cursor: pointer;
+  cursor: crosshair;
 }
 /* button */
 .reset-btn {
@@ -89,7 +89,6 @@ path:hover {
   background-color: royalblue;
 }
 .reset-btn:hover {
-  cursor: pointer;
   filter: brightness(80%);
 }
 /* media queries */
