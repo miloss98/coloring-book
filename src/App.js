@@ -54,7 +54,7 @@ function App() {
           <h1 className="title">Coloring Book </h1>
         </section>
         <section className="svg-container">
-          <Saturn colors={colors} fill={fillColors} dimensions={dimensions} />
+          <Rocket colors={colors} fill={fillColors} dimensions={dimensions} />
         </section>
         <section className="pallete-container">
           <ColorPallete
