@@ -1,4 +1,3 @@
-import "./../app.css";
 import { useContext } from "react";
 import { SvgContext } from "../context";
 const SaturnSVG = () => {
