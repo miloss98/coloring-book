@@ -1,28 +1,16 @@
-import "../app.css";
-const ColorPallete = (props) => {
-  const { currentColor, changeColor, reset } = props;
-
-  const colors = [
-    "#FF0000",
-    "#ffa500",
-    "#FFFF00",
-    "#00FF00",
-    "#00FFFF",
-    "#0000FF",
-    "#FF00FF",
-    "#800080",
-    "#FFFFFF",
-    "#000000",
-    "#454545",
-    "#999999",
-  ];
+import "./../app.css";
+import { SvgContext } from "../context";
+import { useContext } from "react";
+const ColorPallete = () => {
+  const { currentColor, setCurrentColor, reset, colorsArray } =
+    useContext(SvgContext);
 
   return (
     <div className="color-palette">
-      {colors.map((color, id) => {
+      {colorsArray.map((color, id) => {
         const activeClass = currentColor === color ? "single-color-active" : "";
         return (
-          <div key={id} onClick={() => changeColor(color)}>
+          <div key={id} onClick={() => setCurrentColor(color)}>
             <div
               className={`single-color ${activeClass}`}
               style={{ backgroundColor: color }}

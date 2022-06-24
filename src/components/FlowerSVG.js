@@ -1,6 +1,8 @@
 import "./../app.css";
-const Flower = (props) => {
-  const { fill, colors, dimensions } = props;
+import { useContext } from "react";
+import { SvgContext } from "../context";
+const FlowerSVG = () => {
+  const { fill, colors, dimensions } = useContext(SvgContext);
 
   return (
     <svg
@@ -171,4 +173,4 @@ const Flower = (props) => {
   );
 };
 
-export default Flower;
+export default FlowerSVG;

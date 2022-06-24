@@ -1,6 +1,6 @@
 import ColorPallete from "./ColorPallete";
-import Flower from "./Flower";
-import Rocket from "./Rocket";
-import Saturn from "./Saturn";
+import FlowerSVG from "./FlowerSVG";
+import RocketSVG from "./RocketSVG";
+import SaturnSVG from "./SaturnSVG";
 
-export { ColorPallete, Flower, Rocket, Saturn };
+export { ColorPallete, FlowerSVG, RocketSVG, SaturnSVG };

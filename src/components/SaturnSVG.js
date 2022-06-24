@@ -1,5 +1,8 @@
-const Saturn = (props) => {
-  const { fill, colors, dimensions } = props;
+import "./../app.css";
+import { useContext } from "react";
+import { SvgContext } from "../context";
+const SaturnSVG = () => {
+  const { colors, dimensions, fill } = useContext(SvgContext);
   return (
     <svg
       height={dimensions.height}
@@ -103,4 +106,4 @@ const Saturn = (props) => {
   );
 };
 
-export default Saturn;
+export default SaturnSVG;

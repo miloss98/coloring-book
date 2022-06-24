@@ -1,6 +1,8 @@
 import "./../app.css";
-const Rocket = (props) => {
-  const { fill, colors, dimensions } = props;
+import { useContext } from "react";
+import { SvgContext } from "../context";
+const RocketSVG = () => {
+  const { colors, dimensions, fill } = useContext(SvgContext);
   return (
     <svg
       viewBox="0 0 63 108"
@@ -95,4 +97,4 @@ const Rocket = (props) => {
   );
 };
 
-export default Rocket;
+export default RocketSVG;
