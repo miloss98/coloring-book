@@ -2,7 +2,7 @@ import "./styles/pallete.css";
 import { SvgContext } from "../context";
 import { useContext } from "react";
 const ColorPallete = () => {
-  const { currentColor, setCurrentColor, reset, colorsArray } =
+  const { currentColor, setCurrentColor, colorsArray } =
     useContext(SvgContext);
 
   return (
@@ -18,9 +18,6 @@ const ColorPallete = () => {
           </div>
         );
       })}
-      <button className="reset-btn" onClick={reset}>
-        Reset
-      </button>
     </div>
   );
 };

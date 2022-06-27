@@ -1,6 +1,6 @@
 import { Home, Editor } from "./pages/index";
 import { Route, Routes } from "react-router-dom";
-import { FlowerSVG, PlanetSVG, RocketSVG } from "./components";
+import { FlowerSVG, PlanetSVG, RocketSVG } from "./components/index";
 
 const documents = [
   { component: FlowerSVG, title: "Flower", path: "/flower" },
