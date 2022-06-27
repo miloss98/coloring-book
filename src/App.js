@@ -1,13 +1,24 @@
-import { Home, Flower, Rocket, Planet } from "./pages/index";
+import { Home, Editor } from "./pages/index";
 import { Route, Routes } from "react-router-dom";
+import { FlowerSVG, PlanetSVG, RocketSVG } from "./components";
+
+const documents = [
+  { component: FlowerSVG, title: "Flower", path: "/flower" },
+  { component: RocketSVG, title: "Rocket", path: "/rocket" },
+  { component: PlanetSVG, title: "Planet", path: "/planet" },
+];
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/flower" element={<Flower />} />
-      <Route path="/rocket" element={<Rocket />} />
-      <Route path="/planet" element={<Planet />} />
+      {documents.map((d, index) => (
+        <Route
+          key={index}
+          path={d.path}
+          element={<Editor SVGComponent={d.component} title={d.title} />}
+        />
+      ))}
     </Routes>
   );
 }
