@@ -3,17 +3,13 @@ import { ColorPallete } from "../components";
 import "./../pages/styles/svg_pages.css";
 const Rocket = ({ SVGComponent, title }) => {
   const [element, setElement] = useState(null);
-  const ref = useRef();
+  // const ref = useRef();
 
   useEffect(() => {
-    const element = <SVGComponent ref={ref} />;
+    const element = <SVGComponent />;
 
     setElement(element);
   }, [SVGComponent]);
-
-  // useEffect(() => {
-  //   console.log(ref);
-  // }, [ref.current]);
 
   return (
     <div className="wrapper">

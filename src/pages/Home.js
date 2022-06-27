@@ -19,6 +19,7 @@ const Home = () => {
       image: planet,
     },
   ];
+
   return (
     <div className="homepage-wrapper ">
       <nav>

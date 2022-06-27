@@ -2,12 +2,9 @@ import { useContext } from "react";
 import { SvgContext } from "../context";
 const FlowerSVG = () => {
   const { fill, colors, dimensions } = useContext(SvgContext);
-  //const svgRef = useRef();
 
-  //console.log(svgRef);
   return (
     <svg
-      //ref={svgRef}
       height={dimensions.height}
       width={dimensions.width}
       xmlns="http://www.w3.org/2000/svg"
