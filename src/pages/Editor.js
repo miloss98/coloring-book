@@ -11,9 +11,9 @@ const Rocket = ({ SVGComponent, title }) => {
     setElement(element);
   }, [SVGComponent]);
 
-  useEffect(() => {
-    console.log(ref);
-  }, [ref.current]);
+  // useEffect(() => {
+  //   console.log(ref);
+  // }, [ref.current]);
 
   return (
     <div className="wrapper">

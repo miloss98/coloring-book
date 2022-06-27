@@ -1,4 +1,4 @@
-import { useContext, useRef } from "react";
+import { useContext } from "react";
 import { SvgContext } from "../context";
 const FlowerSVG = () => {
   const { fill, colors, dimensions } = useContext(SvgContext);
