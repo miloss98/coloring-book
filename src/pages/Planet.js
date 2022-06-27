@@ -1,6 +1,6 @@
-import { SaturnSVG, ColorPallete } from "../components";
+import { PlanetSVG, ColorPallete } from "../components";
 import "./../app.css";
-const Rocket = () => {
+const Planet = () => {
   return (
     <div className="wrapper">
       <div className="container">
@@ -8,7 +8,7 @@ const Rocket = () => {
           <h1 className="title">Saturn </h1>
         </section>
         <section className="svg-container">
-          <SaturnSVG />
+          <PlanetSVG />
         </section>
         <section className="pallete-container">
           <ColorPallete />
@@ -18,4 +18,4 @@ const Rocket = () => {
   );
 };
 
-export default Rocket;
+export default Planet;

@@ -1,6 +1,6 @@
 import Home from "./Home";
 import Flower from "./Flower";
 import Rocket from "./Rocket";
-import Saturn from "./Saturn";
+import Planet from "./Planet";
 
-export { Home, Flower, Rocket, Saturn };
+export { Home, Flower, Rocket, Planet };

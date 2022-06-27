@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { SvgContext } from "../context";
-const SaturnSVG = () => {
+const PlanetSVG = () => {
   const { colors, dimensions, fill } = useContext(SvgContext);
   return (
     <svg
@@ -105,4 +105,4 @@ const SaturnSVG = () => {
   );
 };
 
-export default SaturnSVG;
+export default PlanetSVG;

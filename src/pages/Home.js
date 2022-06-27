@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./page_styles/homepage.css";
-import { flower, rocket, saturn } from "./../images/index";
+import { flower, rocket, planet } from "./../images/index";
 const Home = () => {
   const pages = [
     {
@@ -14,9 +14,9 @@ const Home = () => {
       image: rocket,
     },
     {
-      title: "Saturn",
-      path: "/saturn",
-      image: saturn,
+      title: "Planet",
+      path: "/planet",
+      image: planet,
     },
   ];
   return (

@@ -1,4 +1,4 @@
-import { Home, Flower, Rocket, Saturn } from "./pages/index";
+import { Home, Flower, Rocket, Planet } from "./pages/index";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/flower" element={<Flower />} />
       <Route path="/rocket" element={<Rocket />} />
-      <Route path="/saturn" element={<Saturn />} />
+      <Route path="/planet" element={<Planet />} />
     </Routes>
   );
 }
