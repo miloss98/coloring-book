@@ -1,18 +1,22 @@
 import { NavLink } from "react-router-dom";
 import "./page_styles/homepage.css";
+import { flower, rocket, saturn } from "./../images/index";
 const Home = () => {
   const pages = [
     {
       title: "Flower",
       path: "/flower",
+      image: flower,
     },
     {
       title: "Rocket",
       path: "/rocket",
+      image: rocket,
     },
     {
       title: "Saturn",
       path: "/saturn",
+      image: saturn,
     },
   ];
   return (
@@ -22,11 +26,11 @@ const Home = () => {
       </nav>
       <div className="content-container">
         <section className="content">
-          {pages.map((page, index) => (
+          {pages.map((item, index) => (
             <div key={index} className="single-item">
-              <h1 className="single-item-title"> {page.title} </h1>
+              <h1 className="single-item-title"> {item.title} </h1>
               <div className="img-container">
-                <img src="" alt={page.title} />
+                <img className="images" src={item.image} alt={item.title} />
               </div>
               <NavLink
                 style={{
@@ -37,7 +41,7 @@ const Home = () => {
                   letterSpacing: "2px",
                   fontWeight: "600",
                 }}
-                to={page.path}
+                to={item.path}
               >
                 {" "}
                 Start{" "}
