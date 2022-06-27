@@ -1,5 +1,5 @@
 import { PlanetSVG, ColorPallete } from "../components";
-import "./../app.css";
+import "./../pages/styles/svg_pages.css";
 const Planet = () => {
   return (
     <div className="wrapper">

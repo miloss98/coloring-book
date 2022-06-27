@@ -1,5 +1,5 @@
 import { RocketSVG, ColorPallete } from "../components";
-import "./../app.css";
+import "./../pages/styles/svg_pages.css";
 const Rocket = () => {
   return (
     <div className="wrapper">
