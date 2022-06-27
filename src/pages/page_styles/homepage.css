@@ -77,3 +77,6 @@ nav {
   border-radius: 3px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.link-styles:hover {
+  filter: brightness(80%);
+}
