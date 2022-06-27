@@ -32,19 +32,8 @@ const Home = () => {
               <div className="img-container">
                 <img className="images" src={item.image} alt={item.title} />
               </div>
-              <NavLink
-                style={{
-                  textDecoration: "none",
-                  color: "royalblue",
-                  fontSize: "1rem",
-                  textTransform: "uppercase",
-                  letterSpacing: "2px",
-                  fontWeight: "600",
-                }}
-                to={item.path}
-              >
-                {" "}
-                Start{" "}
+              <NavLink className="link-styles" to={item.path}>
+                Start
               </NavLink>
             </div>
           ))}
