@@ -5,16 +5,17 @@ import "./../pages/styles/svg_pages.css";
 import { SvgContext } from "../context";
 import { FaArrowLeft } from "react-icons/fa";
 import { VscDebugRestart } from "react-icons/vsc";
-const Rocket = ({ SVGComponent, title }) => {
+
+const Editor = ({ SVGComponent, title }) => {
   const { reset } = useContext(SvgContext);
   const navigate = useNavigate();
 
   const [element, setElement] = useState(null);
 
-  // const ref = useRef();
+  const ref = useRef();
 
   useEffect(() => {
-    const element = <SVGComponent />;
+    const element = <SVGComponent ref={ref} />;
     setElement(element);
     reset();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -43,4 +44,4 @@ const Rocket = ({ SVGComponent, title }) => {
   );
 };
 
-export default Rocket;
+export default Editor;
