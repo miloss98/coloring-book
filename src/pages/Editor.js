@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useContext } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { ColorPallete } from "../components";
 import { useNavigate } from "react-router-dom";
 import "./../pages/styles/svg_pages.css";
@@ -7,19 +7,18 @@ import { FaArrowLeft } from "react-icons/fa";
 import { VscDebugRestart } from "react-icons/vsc";
 
 const Editor = ({ SVGComponent, title }) => {
-  const { reset } = useContext(SvgContext);
+  const { reset, setCurrentColor } = useContext(SvgContext);
   const navigate = useNavigate();
 
   const [element, setElement] = useState(null);
 
-  const ref = useRef();
-
   useEffect(() => {
-    const element = <SVGComponent ref={ref} />;
+    const element = <SVGComponent />;
+    setCurrentColor("#0000FF");
     setElement(element);
     reset();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [SVGComponent]);
+  }, []);
 
   return (
     <div className="wrapper">

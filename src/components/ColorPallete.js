@@ -2,8 +2,7 @@ import "./styles/pallete.css";
 import { SvgContext } from "../context";
 import { useContext } from "react";
 const ColorPallete = () => {
-  const { currentColor, setCurrentColor, colorsArray } =
-    useContext(SvgContext);
+  const { currentColor, setCurrentColor, colorsArray } = useContext(SvgContext);
 
   return (
     <div className="color-palette">

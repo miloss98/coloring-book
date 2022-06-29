@@ -23,6 +23,7 @@
 }
 .go-back:hover {
   cursor: pointer;
+  filter: brightness(70%);
 }
 /* title */
 .title-container {
