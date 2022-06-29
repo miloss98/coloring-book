@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FlowerSVG, PlanetSVG, RocketSVG } from "./components/index";
 
 const SvgContext = React.createContext();
 
@@ -65,7 +66,12 @@ const SvgProvider = ({ children }) => {
       });
     });
   });
-
+  ///////// svg list ///////////
+  const documents = [
+    { component: FlowerSVG, title: "Flower", path: "/flower" },
+    { component: RocketSVG, title: "Rocket", path: "/rocket" },
+    { component: PlanetSVG, title: "Planet", path: "/planet" },
+  ];
   return (
     <SvgContext.Provider
       value={{
@@ -74,6 +80,7 @@ const SvgProvider = ({ children }) => {
         reset,
         dimensions,
         colorsArray,
+        documents,
       }}
     >
       {children}
