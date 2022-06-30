@@ -59,7 +59,6 @@ const SvgProvider = ({ children }) => {
   //coloring
   useEffect(() => {
     const test = document.querySelectorAll("g > path");
-    console.log(test);
     test.forEach(function (e) {
       e.addEventListener("click", function () {
         e.setAttribute("fill", currentColor);
