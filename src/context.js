@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FlowerSVG, PlanetSVG, RocketSVG } from "./components/index";
+import { FlowerSVG, PlanetSVG, RocketSVG, BurgerSVG } from "./components/index";
 
 const SvgContext = React.createContext();
 
@@ -70,6 +70,7 @@ const SvgProvider = ({ children }) => {
     { component: FlowerSVG, title: "Flower", path: "/flower" },
     { component: RocketSVG, title: "Rocket", path: "/rocket" },
     { component: PlanetSVG, title: "Planet", path: "/planet" },
+    { component: BurgerSVG, title: "Burger", path: "/burger" },
   ];
   return (
     <SvgContext.Provider
