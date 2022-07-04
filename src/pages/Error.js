@@ -10,7 +10,8 @@ const Error = () => {
         <section className="nav-container">
           <button onClick={() => navigate("/")}>
             {" "}
-            <BiArrowBack className="back-home-icon" /> back home?
+            <BiArrowBack className="back-home-icon" />
+            <p className="back-text">back home?</p>
           </button>
         </section>
         <section className="error-content">
