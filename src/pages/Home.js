@@ -1,29 +1,9 @@
 import { NavLink } from "react-router-dom";
 import "./styles/homepage.css";
-import { flower, rocket, planet, burger } from "./../assets/index";
+import { useContext } from "react";
+import { SvgContext } from "../context";
 const Home = () => {
-  const pages = [
-    {
-      title: "Flower",
-      path: "/flower",
-      image: flower,
-    },
-    {
-      title: "Rocket",
-      path: "/rocket",
-      image: rocket,
-    },
-    {
-      title: "Planet",
-      path: "/planet",
-      image: planet,
-    },
-    {
-      title: "Burger",
-      path: "/burger",
-      image: burger,
-    },
-  ];
+  const { pages } = useContext(SvgContext);
 
   return (
     <div className="homepage-wrapper ">

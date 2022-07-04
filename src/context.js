@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FlowerSVG, PlanetSVG, RocketSVG, BurgerSVG } from "./components/index";
-
+import { flower, rocket, planet, burger } from "./assets/index";
 const SvgContext = React.createContext();
 
 const SvgProvider = ({ children }) => {
@@ -72,6 +72,29 @@ const SvgProvider = ({ children }) => {
     { component: PlanetSVG, title: "Planet", path: "/planet" },
     { component: BurgerSVG, title: "Burger", path: "/burger" },
   ];
+  //// pages ////
+  const pages = [
+    {
+      title: "Flower",
+      path: "/flower",
+      image: flower,
+    },
+    {
+      title: "Rocket",
+      path: "/rocket",
+      image: rocket,
+    },
+    {
+      title: "Planet",
+      path: "/planet",
+      image: planet,
+    },
+    {
+      title: "Burger",
+      path: "/burger",
+      image: burger,
+    },
+  ];
   return (
     <SvgContext.Provider
       value={{
@@ -81,6 +104,7 @@ const SvgProvider = ({ children }) => {
         dimensions,
         colorsArray,
         documents,
+        pages,
       }}
     >
       {children}
