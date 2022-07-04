@@ -22,8 +22,8 @@ const SvgProvider = ({ children }) => {
   ];
   //reset
   const reset = () => {
-    const test = document.querySelectorAll("path");
-    test.forEach(function (e) {
+    const svg = document.querySelectorAll("path");
+    svg.forEach(function (e) {
       e.setAttribute("fill", "white");
     });
   };
@@ -58,8 +58,8 @@ const SvgProvider = ({ children }) => {
 
   //coloring
   useEffect(() => {
-    const test = document.querySelectorAll("g > path");
-    test.forEach(function (e) {
+    const svgPath = document.querySelectorAll("path");
+    svgPath.forEach(function (e) {
       e.addEventListener("click", function () {
         e.setAttribute("fill", currentColor);
       });
