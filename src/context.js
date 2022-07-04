@@ -22,7 +22,7 @@ const SvgProvider = ({ children }) => {
   ];
   //reset
   const reset = () => {
-    const test = document.querySelectorAll("g > path");
+    const test = document.querySelectorAll("path");
     test.forEach(function (e) {
       e.setAttribute("fill", "white");
     });
