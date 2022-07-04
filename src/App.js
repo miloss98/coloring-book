@@ -1,4 +1,4 @@
-import { Home, Editor } from "./pages/index";
+import { Home, Error, Editor } from "./pages/index";
 import { Route, Routes } from "react-router-dom";
 import { useContext } from "react";
 import { SvgContext } from "./context";
@@ -15,6 +15,7 @@ function App() {
           element={<Editor SVGComponent={d.component} title={d.title} />}
         />
       ))}
+      <Route path="*" element={<Error />} />
     </Routes>
   );
 }
