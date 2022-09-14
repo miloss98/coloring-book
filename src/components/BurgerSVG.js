@@ -1,19 +1,15 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { SvgContext } from "../context";
 
 const Burger = () => {
-  const { reset, dimensions } = useContext(SvgContext);
-
-  useEffect(() => {
-    reset();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const { dimensions } = useContext(SvgContext);
 
   return (
     <svg
       height={dimensions.height}
       width={dimensions.width}
       viewBox="0 0 200 200"
+      fill="white"
     >
       <g>
         <g

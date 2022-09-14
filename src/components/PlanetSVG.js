@@ -1,20 +1,14 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { SvgContext } from "../context";
 const PlanetSVG = () => {
-  const { reset, dimensions } = useContext(SvgContext);
-
-  useEffect(() => {
-    reset();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const { dimensions } = useContext(SvgContext);
 
   return (
     <svg
       height={dimensions.height}
       width={dimensions.width}
       viewBox="0 0 1375 763"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      fill="white"
     >
       <g>
         <path

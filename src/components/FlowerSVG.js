@@ -1,20 +1,15 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { SvgContext } from "../context";
 
 const FlowerSVG = () => {
-  const { reset, dimensions } = useContext(SvgContext);
-
-  useEffect(() => {
-    reset();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const { dimensions } = useContext(SvgContext);
 
   return (
     <svg
       height={dimensions.height}
       width={dimensions.width}
-      xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 900 900"
+      fill="white"
     >
       <g transform="translate(140 106)">
         <g transform="matrix(1 0 0 0.8 50 80)">

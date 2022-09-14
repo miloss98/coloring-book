@@ -20,10 +20,12 @@ const SvgProvider = ({ children }) => {
     "#454545",
     "#999999",
   ];
+
   //reset
   const reset = () => {
     const svg = document.querySelectorAll("path");
     svg.forEach(function (e) {
+      if (e.dataset["ignore"]) return;
       e.setAttribute("fill", "white");
     });
   };
@@ -60,19 +62,24 @@ const SvgProvider = ({ children }) => {
   useEffect(() => {
     const svgPath = document.querySelectorAll("path");
     svgPath.forEach(function (e) {
+      if (e.fill === "black") return;
       e.addEventListener("click", function () {
+        console.log(e);
+        if (e.dataset["ignore"]) return;
         e.setAttribute("fill", currentColor);
       });
     });
   });
-  ///////// svg list ///////////
+
+  //list of svgs
   const documents = [
     { component: FlowerSVG, title: "Flower", path: "/flower" },
     { component: RocketSVG, title: "Rocket", path: "/rocket" },
     { component: PlanetSVG, title: "Planet", path: "/planet" },
     { component: BurgerSVG, title: "Burger", path: "/burger" },
   ];
-  //// pages ////
+
+  //pages data
   const pages = [
     {
       title: "Flower",

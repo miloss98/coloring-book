@@ -1,20 +1,14 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { SvgContext } from "../context";
 const RocketSVG = () => {
-  const { reset, dimensions } = useContext(SvgContext);
-
-  useEffect(() => {
-    reset();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const { dimensions } = useContext(SvgContext);
 
   return (
     <svg
-      viewBox="0 0 63 108"
+      viewBox="0 -1 65 110 "
       height={dimensions.height}
       width={dimensions.width}
-      xmlns="http://www.w3.org/2000/svg"
-      transform="matrix(1 0 0 0.9 0 1)"
+      fill="white"
     >
       <g>
         <path
